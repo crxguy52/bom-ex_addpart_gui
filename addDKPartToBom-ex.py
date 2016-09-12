@@ -79,6 +79,9 @@ with open(PARTSDB, 'a') as file:
 		entry = entry.replace('\n', '')
   		entry = entry.replace('\r', '')
   		entry = entry + '\n'
+
+
+		entry = entry.encode('utf-8')
 		print entry
 		file.write(entry)
 
